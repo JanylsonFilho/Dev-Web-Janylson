@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    
+    <style>
+        .menu {
+           
+            color: white;
+            padding: 1px;
+          
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            display:flex;
+            justify-content: center;
+           
+        }
+
+        .menu ul li {
+            margin: 0 5px;
+          
+        }
+
+        .menu ul li a {
+            color: black;
+            background-color:azure;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="body">
+
+    <header class="header">
+      
+        <h1 style="color: blue; font-size: 24px;">Curso de Java para Iniciantes</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#sobre">Sobre o Curso</a></li>
+            <li><a href="#topicos">Tópicos Abordados</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+        </ul>
+    </nav>
+    
+    <img class="logo" src="/assets/java.png.png" alt="Logo do Java" width="300" height="300">
+
+    <section id="sobre" class="section">
+        <h2>Sobre o Curso</h2>
+        <p>O Java é uma das linguagens de programação mais populares do mundo, sendo amplamente utilizada para o desenvolvimento de aplicativos, sistemas web e até mesmo jogos.</p>
+    </section>
+
+    <section id="topicos" class="section">
+        <h2>O que você vai aprender?</h2>
+        <ul>
+            <li>Introdução à linguagem Java</li>
+            <li>Estruturas de controle e repetição</li>
+            <li>Programação Orientada a Objetos</li>
+            <li>Manipulação de arquivos e banco de dados</li>
+            <li>Criação de projetos práticos</li>
+        </ul>
+    </section>
+
+    <section id="inscricao" class="section">
+        <h2>Inscreva-se no Curso</h2>
+        <form action="inscricao.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input class="input" type="text" id="nome" name="nome" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="nivel">Nível de conhecimento:</label>
+            <select class="input" id="nivel" name="nivel">
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+            <br><br>
+
+            <button class="button" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        Telefone para contato: (85) 98955-1746
+    </footer>
+
+</body>
+</html>
