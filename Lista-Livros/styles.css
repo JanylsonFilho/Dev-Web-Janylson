@@ -1,0 +1,146 @@
+/* Definição de cores clássicas de biblioteca antiga */
+:root {
+    --cor-fundo: #FAF3E0; /* Bege suave, imitando páginas de livros antigos */
+    --cor-texto: #3E2723; /* Marrom escuro, remete a madeira e couro de capa de livro */
+    --cor-container: #FFF8E1; /* Tom levemente mais claro para destacar o conteúdo */
+    --cor-borda: #C8A165; /* Tom dourado envelhecido para detalhes sofisticados */
+    --cor-botao: #8D6E63; /* Marrom amadeirado */
+    --cor-botao-hover: #6D4C41; /* Marrom mais escuro para realce */
+    --cor-botao-delete: #C8A165; /* Dourado envelhecido */
+    --cor-botao-delete-hover: #A67C52; /* Dourado mais escuro */
+    --cor-lista-fundo: #F5E1C3; /* Bege amarelado, parecido com pergaminho */
+    --cor-completed: #A1887F; /* Cinza envelhecido para tarefas concluídas */
+}
+
+/* Reset básico */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: var(--cor-texto);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Container principal */
+.container {
+    background: var(--cor-container);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid var(--cor-borda);
+}
+
+/* Títulos */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 5px;
+}
+
+/* Estilização do input */
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 4px;
+    background-color: var(--cor-lista-fundo);
+    color: var(--cor-texto);
+    font-family: 'Times New Roman', serif;
+}
+
+/* Botões */
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--cor-botao);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+    transform: scale(1.05);
+}
+
+/* Lista de livros */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: var(--cor-lista-fundo);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid var(--cor-borda);
+    font-family: 'Times New Roman', serif;
+}
+
+/* Itens concluídos */
+li.completed {
+    text-decoration: line-through;
+    color: var(--cor-completed);
+}
+
+/* Botão de deletar */
+.delete-btn {
+    background: var(--cor-botao-delete);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.delete-btn:hover {
+    background: var(--cor-botao-delete-hover);
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-texto);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+}
