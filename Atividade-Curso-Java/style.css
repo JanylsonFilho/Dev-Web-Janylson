@@ -1,0 +1,52 @@
+/* External CSS - style.css */
+
+/* Estilo Geral */
+body {
+   font-family: 'Courier New', Courier, monospace;
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   text-align: center;
+   background-color: #f4f4f4;
+   padding: 20px;
+}
+
+.logo {
+   display: block;
+   margin: 20px auto;
+}
+
+.section {
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #ccc;
+   background-color: #f9f9f9;
+}
+
+.input {
+   padding: 5px;
+   margin: 5px 0;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.button {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: #45a049;
+}
+
+.footer {
+   text-align: center;
+   padding: 10px;
+   background-color: #f4f4f4;
+   margin-top: 20px;
+}
